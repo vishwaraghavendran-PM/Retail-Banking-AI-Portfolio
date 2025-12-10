@@ -143,11 +143,14 @@ Results appear in UI.
 - Deploy full IaC using Terraform/Bicep (files provided in repo)
 
 ## 10. Troubleshooting
+
 CORS issues
 - Add frontend origin to App Service → CORS settings.
+
 500 errors from agent
 - Check Foundry endpoint URL
 - Verify key validity
 - Validate JSON formatting in prompts
+
 Cosmos DB item not found
 - Ensure your synthetic dataset is loaded into the container.
