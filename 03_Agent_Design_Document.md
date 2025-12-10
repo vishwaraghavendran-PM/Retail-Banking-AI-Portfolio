@@ -1,27 +1,28 @@
 # Agentic AI Design – Multi-Agent Workflow for CRM
 
 ## TOC
-- Overview
-- Agent Roles  
-  - Analysis Agent  
-  - Compliance Agent  
-  - Execution Agent  
-- Orchestration Sequence  
-  - Primary reasoning  
-  - Compliance guardrails  
-  - Automated execution  
-  - Final packaging  
-- Prompt Engineering Strategy  
-  - Bank persona rules  
-  - JSON schema enforcement  
-  - Temperature constraints  
-  - Compliance constraints  
-- Evaluation Strategy  
-  - Consistency checks  
-  - Completeness  
-  - JSON validity  
-  - Compliance accuracy  
-  - Latency benchmarks
+- 1 Overview
+- 2 Agent Roles  
+  - 2.1 Analysis Agent  
+  - 2.2 Compliance Agent  
+  - 2.3 Execution Agent  
+- 3 Orchestration Sequence  
+  - 3.1 Primary reasoning  
+  - 3.2 Compliance guardrails  
+  - 3.3 Automated execution  
+  - 3.4 Final packaging  
+- 4 Prompt Engineering Strategy  
+  - 4.1 Bank persona rules  
+  - 4.2 JSON schema enforcement  
+  - 4.3 Temperature constraints  
+  - 4.4 Compliance constraints  
+- 5 Evaluation Strategy  
+  - 5.1 Consistency checks  
+  - 5.2 Completeness  
+  - 5.3 JSON validity  
+  - 5.4 Compliance accuracy  
+  - 5.5 Latency benchmarks
+- 6 Future Enhancements
  
 ## 1. Overview
 
@@ -36,9 +37,9 @@ Agents operate in a sequenced pipeline, with each layer adding value and guardra
 
 ---
 
-## Agent Roles
+## 2. Agent Roles
 
-### Analysis Agent
+### 2.1 Analysis Agent
 Purpose: Examine customer portfolio, compute churn risk, generate personalized product recommendations.
 
 Inputs:
@@ -56,7 +57,7 @@ Inputs:
   "cta": "Email outreach recommended"
 }
 ```
-### Compliance Agent
+### 2.2 Compliance Agent
 Purpose: Validate outputs from the Analysis Agent for:
 - regulatory alignment
 - forbidden financial claims
@@ -71,7 +72,7 @@ Purpose: Validate outputs from the Analysis Agent for:
 ```
 If "approved": false, the system returns flagged issues and halts execution.
 
-### Execution Agent
+### 2.3 Execution Agent
 Purpose: Convert approved recommendations into operational CRM actions, including:
 
 - generating CRM task payloads
