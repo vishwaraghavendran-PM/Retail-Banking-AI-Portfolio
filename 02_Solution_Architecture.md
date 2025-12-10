@@ -22,12 +22,20 @@ Key components:
   Tracks agent steps and performance metrics.
 
 ## 2. Diagram (Text-Based)
-flowchart LR
-    U[User] --> R[React Frontend]
-    R --> B[Backend API]
-    B --> A[Analysis Agent]
-    A --> C[Cosmos DB]
-    CA[Compliance Agent] --> C
-    C --> E[Execution Agent]
-    E --> T[CRM Task]
-    E --> M[Email]
+User
+  ↓
+React Frontend
+  ↓
+Backend API
+  ↓
+Analysis Agent
+  ↓
+Cosmos DB
+↑        ↓
+↑        ↓
+Compliance Agent
+        ↓
+   Execution Agent
+      ↙      ↘
+ CRM Task    Email
+
